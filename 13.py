@@ -23,5 +23,4 @@ answers = [
 ]
 
 total = sum([ord(i) for i in question])
-    
 print answers[total%len(answers)]
