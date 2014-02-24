@@ -22,8 +22,6 @@ answers = [
 'Nope.',
 ]
 
-total = 0
-for letter in question:
-    total += ord(letter)
+total = sum([ord(i) for i in question])
     
 print answers[total%len(answers)]
